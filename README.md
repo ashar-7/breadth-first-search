@@ -2,6 +2,7 @@
 Breadth First Search implementation for pathfinding in a grid with visualizations using C++ and OpenFrameworks.
 
 Executable file can be found in bin/
+
 Controls - Press Enter to generate a new Grid.
          - Press Space to start finding the path for the generated grid.
 

@@ -12,4 +12,5 @@ The blue rect shows the goal node. (The node to search)
 The red rects show the shortest path from the start node to the goal node.
 
 You can modify the grid easily - Just look at the generateGrid() function in ofApp.cpp
+
 To modify things such as the outlines of the rects, look in Graph.h && Graph.cpp

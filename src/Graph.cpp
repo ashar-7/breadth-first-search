@@ -23,7 +23,7 @@ void Node::draw() {
 	ofFill();
 	ofSetLineWidth(2);
 	ofDrawRectangle(x, y, w, h);
-	ofSetColor(0);
+	ofSetColor(255);
 	ofNoFill();
 	ofDrawRectangle(x, y, w, h);
 

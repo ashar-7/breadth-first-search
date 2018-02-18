@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <conio.h>
 
+ofSoundPlayer soundPlayer;
 ofTrueTypeFont satanFont;
 ofTrueTypeFont satanFontSmall;
 
@@ -89,6 +90,7 @@ void ofApp::setup() {
 
 	satanFont.load("Satan Possessed.ttf", 50);
 	satanFontSmall.load("Satan Possessed.ttf", 10);
+	soundPlayer.load("click.wav");
 }
 
 //--------------------------------------------------------------
@@ -122,6 +124,8 @@ void ofApp::keyPressed(int key){
 			pathCounter = path.size() - 1;
 		}
 
+		if(!soundPlayer.isPlaying())
+			soundPlayer.play();
 	}
 	else if (key == OF_KEY_RETURN)
 		generateGrid();
